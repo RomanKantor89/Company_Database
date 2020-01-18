@@ -1,0 +1,78 @@
+Name       Null?    Type         
+---------- -------- ------------ 
+SKILLNUM   NOT NULL CHAR(4)      
+SKILLNAME  NOT NULL VARCHAR2(30) 
+HOURLYRATE NOT NULL NUMBER(5,2)  
+Name        Null?    Type         
+----------- -------- ------------ 
+EMPNUM      NOT NULL VARCHAR2(3)  
+EMPLNAME    NOT NULL VARCHAR2(20) 
+EMPFNAME    NOT NULL VARCHAR2(20) 
+EMPHIREDATE NOT NULL DATE         
+EMPPHONE             CHAR(13)     
+SKILLNUM             CHAR(4)      
+Name         Null?    Type          
+------------ -------- ------------- 
+PROJNUM      NOT NULL CHAR(7)       
+PROJNAME     NOT NULL VARCHAR2(100) 
+PROJLOCATION          VARCHAR2(50)  
+PROJTYPE              VARCHAR2(100) 
+Name    Null?    Type        
+------- -------- ----------- 
+PROJNUM NOT NULL CHAR(7)     
+EMPNUM  NOT NULL VARCHAR2(3) 
+Name        Null?    Type          
+----------- -------- ------------- 
+BENEFITNUM  NOT NULL CHAR(6)       
+BENEFITNAME NOT NULL VARCHAR2(100) 
+Name       Null?    Type        
+---------- -------- ----------- 
+EMPNUM     NOT NULL VARCHAR2(3) 
+BENEFITNUM NOT NULL CHAR(6)     
+STARTDATE  NOT NULL DATE        
+Name     Null?    Type         
+-------- -------- ------------ 
+SREPNO   NOT NULL VARCHAR2(2)  
+SREPNAME NOT NULL VARCHAR2(32) 
+Name         Null?    Type         
+------------ -------- ------------ 
+CUSTTYPE     NOT NULL VARCHAR2(3)  
+CUSTGROUP    NOT NULL VARCHAR2(50) 
+CUSTSUBGROUP NOT NULL VARCHAR2(50) 
+Name        Null?    Type          
+----------- -------- ------------- 
+CUSTNUM     NOT NULL VARCHAR2(3)   
+CUSTNAME    NOT NULL VARCHAR2(50)  
+CUSTPHONE   NOT NULL VARCHAR2(13)  
+CUSTADDRESS          VARCHAR2(100) 
+CUSTFAX              VARCHAR2(13)  
+CUSTTYPE             VARCHAR2(3)   
+Name    Null?    Type        
+------- -------- ----------- 
+INVNUM  NOT NULL CHAR(9)     
+INVDATE NOT NULL DATE        
+PROJNUM          CHAR(7)     
+SREPNO           VARCHAR2(2) 
+CUSNUM           VARCHAR2(3) 
+Name        Null?    Type        
+----------- -------- ----------- 
+INVNUM      NOT NULL CHAR(9)     
+EMPNUM      NOT NULL VARCHAR2(3) 
+DATEWORKED  NOT NULL DATE        
+HOURSWORKED NOT NULL NUMBER      
+Name           Null?    Type         
+-------------- -------- ------------ 
+EQUIPCLASSNUM  NOT NULL VARCHAR2(10) 
+EQUIPCLASSDESC NOT NULL VARCHAR2(50) 
+Name          Null?    Type         
+------------- -------- ------------ 
+EQUIPNUM      NOT NULL VARCHAR2(10) 
+EQUIPDESC     NOT NULL VARCHAR2(50) 
+EQUIPCLASSNUM          VARCHAR2(10) 
+HOURLYRATE             NUMBER(5,2)  
+Name      Null?    Type         
+--------- -------- ------------ 
+INVNUM    NOT NULL CHAR(9)      
+EQUIPNUM  NOT NULL VARCHAR2(10) 
+DATEUSED  NOT NULL DATE         
+HOURSUSED NOT NULL NUMBER       

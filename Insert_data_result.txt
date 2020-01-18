@@ -1,0 +1,149 @@
+
+SKIL SKILLNAME                      HOURLYRATE
+---- ------------------------------ ----------
+1    Produce BluePrints                    100
+2    Supervise Foundation                  150
+3    Electrical Supervisor                 150
+
+
+
+EMP EMPLNAME             EMPFNAME             EMPHIRED EMPPHONE      SKIL
+--- -------------------- -------------------- -------- ------------- ----
+311 Hall                 Roy                  11-11-08 (905)662-3887 1   
+201 Relton               Joan                 07-11-08               1   
+299 Rogers               Ann                  09-11-08               2   
+331 Wang                 Alex                 13-11-08 (905)457-7728 3   
+205 Chan                 Pui-Ling             07-11-08 (905)662-3887     
+298 Guilmore             Robert               09-11-08                   
+
+6 rows selected. 
+
+
+PROJNUM PROJNAME                                                                                             PROJLOCATION                                       PROJTYPE                                                                                            
+------- ---------------------------------------------------------------------------------------------------- -------------------------------------------------- ----------------------------------------------------------------------------------------------------
+06-2337 Build North Bay Shopping Centre                                                                      North Bay, ON                                      5 - Build Shopping Centre                                                                           
+06-2338 Addition to South Lake Hospital                                                                                                                                                                                                                             
+
+
+PROJNUM EMP
+------- ---
+06-2337 201
+06-2337 299
+06-2337 311
+06-2337 331
+06-2338 201
+06-2338 205
+06-2338 298
+06-2338 311
+06-2338 331
+
+9 rows selected. 
+
+
+BENEFI BENEFITNAME                                                                                         
+------ ----------------------------------------------------------------------------------------------------
+SU-141 Sun Life Medical(Group 144)                                                                         
+EPP-78 Engineer Pension Plan(Grp 78)                                                                       
+MU-100 Mutual Life – Life Insurance-I                                                                    
+
+
+EMP BENEFI STARTDAT
+--- ------ --------
+205 SU-141 95-01-05
+205 EPP-78 04-09-15
+205 MU-100 04-09-15
+311 EPP-78 09-11-15
+311 MU-100 09-09-07
+331 SU-141 02-06-22
+
+6 rows selected. 
+
+
+SR SREPNAME                        
+-- --------------------------------
+23 Oliv Gardenor                   
+13 Walter Chan                     
+20 Joe Shoelly                     
+
+
+CUS CUSTGROUP                                          CUSTSUBGROUP                                      
+--- -------------------------------------------------- --------------------------------------------------
+101 Government                                         Federal                                           
+102 Government                                         Provincial                                        
+103 Corporation                                        Financial Services                                
+104 Corporation                                        Oil                                               
+105 Corporation                                        Retail                                            
+
+
+CUS CUSTNAME                                           CUSTPHONE     CUSTADDRESS                                                                                          CUSTFAX       CUS
+--- -------------------------------------------------- ------------- ---------------------------------------------------------------------------------------------------- ------------- ---
+1   Department of Defense                              (877)223-4172                                                                                                      (207)223-4179 101
+2   Department of Agriculture                          (877)223-4111                                                                                                      (207)223-4113 101
+3   National Archives                                  (877)223-4201                                                                                                      (207)223-4202 101
+4   Ministry of Transportation                         (595)326-5173                                                                                                      (595)326-5181 102
+5   Ministry of Health                                 (583)566-4744                                                                                                      (583)566-4743 102
+6   DUCA Credit Union                                  (859)692-4292                                                                                                      (589)692-4299 103
+7   Bank of Nova Scotia                                (978)288-4319                                                                                                      (817)288-5319 103
+8   Esso Imperial                                      (856)945-5168                                                                                                      (856)945-5163 104
+103 Sears Canada                                       (678)848-9987 417 Allstate Road, Toronto, ON M2N 6H4                                                               (678-948-9989 105
+
+9 rows selected. 
+
+
+INVNUM    INVDATE  PROJNUM SR CUS
+--------- -------- ------- -- ---
+EAP-44720 05-10-17 06-2337 23 103
+EAP-44721 05-10-18         13    
+EAP-44722 05-10-18         23    
+EAP-44723 05-10-18         20    
+
+
+INVNUM    EMP DATEWORK HOURSWORKED
+--------- --- -------- -----------
+EAP-44720 311 17-10-10           7
+EAP-44720 311 17-10-11         6.5
+EAP-44720 201 17-10-10           6
+EAP-44720 201 17-10-11         7.5
+EAP-44720 299 17-10-12           7
+EAP-44720 299 17-10-13           6
+EAP-44720 299 17-10-14           7
+EAP-44720 331 17-10-13           7
+EAP-44720 331 17-10-14           6
+
+9 rows selected. 
+
+
+EQUIPCLASS EQUIPCLASSDESC                                    
+---------- --------------------------------------------------
+OFF        Office Copier                                     
+MIX        Concrete Mix                                      
+TRU        Wood Trusses                                      
+FRM        Framing                                           
+STF        Steel Framing                                     
+CST        Crushd Stone                                      
+FLD        Front Loader                                      
+CRA        Overhead Lift                                     
+
+8 rows selected. 
+
+
+EQUIPNUM   EQUIPDESC                                          EQUIPCLASS HOURLYRATE
+---------- -------------------------------------------------- ---------- ----------
+P100       Kodac Photocopier                                  OFF                60
+CMT22      Concrete Mixer Truck                               MIX               250
+A100       50' x 16' Roofing                                  TRU                  
+A137       2 x 4 x 8 Poplar                                   FRM                  
+STL100     Front Steel Loader                                 STF                  
+ST22       Stone Crusher                                      CST                  
+FL660      Front Loading Device                               FLD                  
+CRA-11     120' Overhead Crane                                CRA                  
+
+8 rows selected. 
+
+
+INVNUM    EQUIPNUM   DATEUSED  HOURSUSED
+--------- ---------- -------- ----------
+EAP-44720 P100       17-10-14          7
+EAP-44720 CMT22      17-10-14          8
+EAP-44720 CMT22      17-10-15          8
+

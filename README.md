@@ -1,2 +1,2 @@
 # Company_Database
-Company Database of employees, projects, benefits, customers, equipment and payroll
+Company Database that involves relationships between employees, projects, benefits, customers, equipment and payroll.
